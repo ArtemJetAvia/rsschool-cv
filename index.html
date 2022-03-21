@@ -23,7 +23,8 @@
         min-width: 320px;
       }
       .header,
-      .socialmedia {
+      .socialmedia,
+      .date {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -198,9 +199,18 @@
         overflow: hidden;
         border-radius: 50%;
       }
+      .icon-rss {
+        height: 30px;
+        overflow: hidden;
+      }
 
-      .icon:hover {
+      .icon:hover, 
+      .icon-rss:hover {
         background-color: orangered;
+      }
+
+      .date {
+        font-weight: bold;
       }
 
       @media screen and (min-width: 800px) {
@@ -232,7 +242,7 @@
             <a href="mailto:artemavia87@mail.ru">artemavia87@mail.ru</a>
           </div>
           <div class="contacts">
-            tel: <a href="tel:79819849322">+79819849322</a>
+            tel: <a href="tel:+79626607163">+79626607163</a>
           </div>
         </div>
       </header>
@@ -287,6 +297,22 @@
           </div>
         </section>
         <section>
+          <h2>CODE</h2>
+          <hr />
+          <code>
+            <pre>
+              let count = 0;
+            backyard.forEach(element => {
+              element.forEach(el => {
+                if (el === '^^') count++;
+              });
+            });
+            return count;
+            </pre>
+          </code>
+        </section>
+        
+        <section>
           <h2>English</h2>
           <hr />
           <p>A1. Beginner</p>
@@ -302,7 +328,7 @@
               <a href="mailto:artemavia87@mail.ru">artemavia87@mail.ru</a>
             </div>
             <div class="contacts">
-              Tel:<a href="tel:79819849322">+79819849322</a>
+              Tel:<a href="tel:+79626607163">+79626607163</a>
             </div>
           </div>
           <div>
@@ -316,10 +342,13 @@
             /></a>
           </div>
           <div>
-            <a href="https://vk.com/artemavia"
-              ><img class="icon" src="vk-logo.png" alt="vk" /><br
+            <a href="https://rs.school/js/"
+              ><img class="icon-rss" src="rs_school_js.svg" alt="rss school" /><br
             /></a>
           </div>
+        </div>
+        <div class="date ">
+          2022
         </div>
       </footer>
     </div>
