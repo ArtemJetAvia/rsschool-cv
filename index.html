@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemov Aleksandr CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 50%;
+        min-width: 320px;
+      }
+      .header,
+      .socialmedia,
+      .date {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 0;
+      }
+      .mainphoto {
+        overflow: hidden;
+        min-width: 200px;
+        border-radius: 50%;
+      }
+      .photo {
+        width: 200px;
+        border-radius: 50%;
+        transition: 1s;
+      }
+      .photo:hover {
+        transform: scale(7) rotate(15deg) translateY(9px) translateX(5px);
+      }
+      .maininfo {
+        padding: 30px;
+      }
+      h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5em;
+      }
+      h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #20721ee1;
+      }
+      .location {
+        font-style: italic;
+      }
+      .location,
+      .contacts {
+        margin: 20px;
+      }
+      .contacts > a {
+        text-decoration: none;
+      }
+      section {
+        margin-bottom: 25px;
+        line-height: 25px;
+      }
+      .skills {
+        margin: 0 auto;
+        max-width: 50%;
+        margin-top: 20px;
+      }
+      .progress1::before {
+        content: "HTML";
+        position: absolute;
+        font-weight: 700;
+        left: -50px;
+        top: 0px;
+      }
+      .progress2::before {
+        content: "CSS";
+        position: absolute;
+        font-weight: 700;
+        left: -50px;
+        top: 0px;
+      }
+      .progress3::before {
+        content: "JS";
+        position: absolute;
+        font-weight: 700;
+        left: -50px;
+        top: 0px;
+      }
+      /*=============== progress bar =====================*/
+      .progress1 {
+        padding: 4px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        position: relative;
+      }
+      .progress-bar1 {
+        height: 15px;
+        border-radius: 30px;
+      }
+      .progress-moved .progress-bar1 {
+        width: 75%;
+        animation: 2s progressAnimation1 1s forwards;
+      }
+      @keyframes progressAnimation1 {
+        0% {
+          width: 5%;
+          background-color: rgb(214, 14, 14);
+        }
+        40% {
+          width: 45%;
+          background-color: rgb(223, 223, 22);
+        }
+        100% {
+          width: 75%;
+          background-color: rgb(6, 187, 6);
+        }
+      }
+      .progress2 {
+        padding: 4px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        position: relative;
+      }
+      .progress-bar2 {
+        height: 15px;
+        border-radius: 30px;
+      }
+      .progress-moved .progress-bar2 {
+        width: 60%;
+        animation: 2s progressAnimation2 1s forwards;
+      }
+      @keyframes progressAnimation2 {
+        0% {
+          width: 5%;
+          background-color: rgb(214, 14, 14);
+        }
+        100% {
+          width: 60%;
+          background-color: rgb(223, 223, 22);
+        }
+      }
+      .progress3 {
+        padding: 4px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        position: relative;
+      }
+      .progress-bar3 {
+        height: 15px;
+        border-radius: 30px;
+      }
+      .progress-moved .progress-bar3 {
+        width: 30%;
+        animation: 2s progressAnimation3 1s forwards;
+      }
+      @keyframes progressAnimation3 {
+        0% {
+          width: 5%;
+          background-color: rgb(214, 14, 14);
+        }
+        100% {
+          width: 30%;
+          background-color: rgb(235, 77, 77);
+        }
+      }
+      .education > span {
+        font-weight: 700;
+      }
+      .icon {
+        height: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .icon-rss {
+        height: 30px;
+        overflow: hidden;
+      }
+      .icon:hover, 
+      .icon-rss:hover {
+        background-color: orangered;
+      }
+      .date {
+        font-weight: bold;
+      }
+      @media screen and (min-width: 800px) {
+        .icon {
+          height: 50px;
+        }
+        h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="mainphoto">
+          <img
+            class="photo"
+            src="fullFace.jpg"
+            alt="photo"
+            title="I'm watching you">
+        </div>
+        <div class="maininfo">
+          <h1>Artemov Aleksandr</h1>
+          <div class="location">St.Petersburg, Russia</div>
+          <div class="contacts">
+            <a href="mailto:artemavia87@mail.ru">artemavia87@mail.ru</a>
+          </div>
+          <div class="contacts">
+            tel: <a href="tel:+79626607163">+79626607163</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <h2>Profile</h2>
+          <hr>
+          <p>
+            I ensured the airworthiness of the aircraft. I have hold positions
+            from mechanic to head of maintenance coordination and planning
+            department. Fired due to bankruptcy of the enterprise. I had to
+            change my place of residence due to lack of work and move to St.
+            Petersburg from Arkhangelsk.
+          </p>
+          <br>
+          <p>
+            I want to become a sought-after web development specialist with a
+            choice.
+          </p>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <hr>
+          <div>
+            <div class="skills">
+              <div class="progress1 progress-moved">
+                <div class="progress-bar1"></div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="progress2 progress-moved">
+                <div class="progress-bar2"></div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="progress3 progress-moved">
+                <div class="progress-bar3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <hr>
+          <div class="education">
+            <span>St.Petersburg University of Civil Aviation</span>
+            <p>Technical operation of aircraft and engines 2008-2012</p>
+            <br>
+            <span>Self-education:</span>
+            <p>Student at RS School</p>
+          </div>
+        </section>
+        <section>
+          <h2>CODE</h2>
+          <hr>
+          <code>
+              let count = 0;
+              backyard.forEach(element =&gt; {
+              element.forEach(el =&gt; {
+                if (el === '^^') count++;
+              });
+            });
+            return count;
+          </code>
+        </section>
+        <section>
+          <h2>English</h2>
+          <hr>
+          <p>A1. Beginner</p>
+          <br>
+        </section>
+      </main>
+      <footer>
+        <h2>Contacts</h2>
+        <hr>
+        <div class="socialmedia">
+          <div>
+            <div class="contacts">
+              <a href="mailto:artemavia87@mail.ru">artemavia87@mail.ru</a>
+            </div>
+            <div class="contacts">
+              Tel:<a href="tel:+79626607163">+79626607163</a>
+            </div>
+          </div>
+          <div>
+            <a href="https://github.com/ArtemJetAvia"
+              ><img class="icon" src="github-logo.png" alt="Github"><br></a>
+          </div>
+          <div>
+            <a href="https://t.me/ArtemJetAvia"
+              ><img class="icon" src="teleg-logo.png" alt="Telegram"><br></a>
+          </div>
+          <div>
+            <a href="https://rs.school/js/"
+              ><img class="icon-rss" src="rs_school_js.svg" alt="rss school"><br></a>
+          </div>
+        </div>
+        <div class="date ">
+          2022
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
